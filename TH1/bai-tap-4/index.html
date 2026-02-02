@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <h3>Basic Info</h3>
+      <hr />
+      <label for="id">Employee</label>
+      <span id="id">9</span>
+      <br />
+      <label for="last-name">Last Name</label>
+      <span id="last-name">Sách</span>
+      <br />
+      <label for="first-name">First Name</label>
+      <input type="text" name="first-name" id="first-name" />
+      <br />
+      <label for="gender">Gender</label>
+      <br />
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label>
+      <br />
+      <input type="radio" name="gender" id="XXX" value="XXX" />
+      <label for="XXX">XXX</label>
+      <br />
+      <input type="radio" name="gender" id="ZZZ" value="ZZZ" />
+      <label for="ZZZ">ZZZ</label>
+      <br />
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title" />
+      <br />
+      <label for="suffix">Suffix</label>
+      <input type="text" name="suffix" id="suffix" />
+      <br />
+      <label for="birth-date">BirthDate</label>
+      <input type="text" name="birth-date" id="birth-date" />
+      <br />
+      <label for="hire-date">HireDate</label>
+      <input type="text" name="hire-date" id="hire-date" />
+      <br />
+      <label for="ssn">SSN # (if applicable)</label>
+      <input type="text" name="ssn" id="ssn" />
+      <br />
+      <label for="reports">Reports to</label>
+      <select name="reports" id="reports">
+        <option value="minh-duc">Minh Đức</option>
+        <option value="phu-duc">Phú Đức</option>
+        <option value="tung-lam">Tùng Lâm</option>
+      </select>
+      <h3>Contact Info</h3>
+      <hr />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="name@example.com"
+      />
+      <br />
+      <label for="address">Address</label>
+      <input type="text" name="address" id="address" />
+      <br />
+      <label for="city">City</label>
+      <input type="text" name="city" id="city" />
+      <br />
+      <label for="region">Region</label>
+      <input type="text" name="region" id="region" />
+      <br />
+      <label for="code">Postal Code</label>
+      <input type="text" name="code" id="code" />
+      <br />
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <option value="vn">Việt Nam</option>
+        <option value="au">Úc</option>
+      </select>
+      <br />
+      <label for="phone">VN Home Phone</label>
+      <input type="tel" name="phone" id="phone" />
+      <br />
+      <label for="photo">Photo</label>
+      <input type="file" name="photo" id="photo" />
+      <h3>Optional Info</h3>
+      <hr />
+      <label for="note">Notes</label>
+      <iframe
+        src="https://onlinenotepad.org/notepad"
+        width="500px"
+        height="500px"
+        frameborder="0"
+      ></iframe>
+      <br />
+      <label for="preferred">Preferred Shift</label>
+      <br />
+      <input type="checkbox" name="preferred" value="regular" />
+      <label for="regular">Regular</label>
+      <br />
+      <input type="checkbox" name="preferred" value="gravy-yard" />
+      <label for="gravy-yard">Gravy-yard</label>
+      <br />
+      <label for="active">Active?</label>
+      <input type="checkbox" name="active" id="active" />
+      <button><</button>
+      <button>></button>
+      <button type="submit">Submit</button>
+      <button>Cancel</button>
+    </form>
+  </body>
+</html>
