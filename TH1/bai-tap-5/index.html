@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="logo">HN Management</div>
+        <nav class="nav">
+          <a href="#">Home</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="search">
+          <input type="text" placeholder="Search..." />
+          <button>Search</button>
+        </div>
+      </header>
+      <main class="main">
+        <div class="page-header">
+          <h2>Employee</h2>
+          <button class="btn-add">+ Add</button>
+        </div>
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Position</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Fatima Beatriz</td>
+                <td>Fatima Beatriz@gmail.com</td>
+                <td>0985674321</td>
+                <td>Staff</td>
+                <td>
+                  <button class="edit">Edit</button>
+                  <button class="delete">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Gabriel Hanna</td>
+                <td>Gabriel Hanna@gmail.com</td>
+                <td>0985674321</td>
+                <td>Staff</td>
+                <td>
+                  <button class="edit">Edit</button>
+                  <button class="delete">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Charles Diya</td>
+                <td>Charles Diya@gmail.com</td>
+                <td>0985674321</td>
+                <td>Staff</td>
+                <td>
+                  <button class="edit">Edit</button>
+                  <button class="delete">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Frank Lambo</td>
+                <td>Frank Lambo@gmail.com</td>
+                <td>0985674321</td>
+                <td>Manager</td>
+                <td>
+                  <button class="edit">Edit</button>
+                  <button class="delete">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Louis Tom</td>
+                <td>Louis Tom@gmail.com</td>
+                <td>0985674321</td>
+                <td>Staff</td>
+                <td>
+                  <button class="edit">Edit</button>
+                  <button class="delete">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+      <div class="modal">
+        <div>
+          <form>
+            <h3>New Employee</h3>
+            <label for="name">Name</label><br />
+            <input type="text" name="name" id="name" /><br />
+            <label for="email">Email</label><br />
+            <input type="email" name="email" id="email" /><br />
+            <label for="phone">Phone</label><br />
+            <input type="tel" name="phone" id="phone" /><br />
+            <label for="position">Position</label><br />
+            <select name="position" id="position">
+              <option value="staff">Staff</option>
+              <option value="manager">Manager</option>
+              <option value="ceo">CEO</option>
+            </select>
+            <br />
+            <label>Sex</label><br />
+            <input type="radio" name="sex" id="male" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="female" value="female" />
+            <label for="female">Female</label>
+            <button type="submit">Save</button>
+            <button>Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

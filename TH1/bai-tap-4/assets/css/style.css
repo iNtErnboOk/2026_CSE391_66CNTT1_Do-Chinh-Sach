@@ -1,0 +1,45 @@
+form {
+  width: 1000px;
+  margin: 20px;
+}
+h3 {
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+hr {
+  margin-bottom: 15px;
+}
+label {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+  padding-left: 20px;
+}
+input,
+select,
+span {
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+iframe,
+span {
+  display: inline-block;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 350px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-left: 220px;
+}
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  padding-left: 0;
+  font-weight: normal;
+}

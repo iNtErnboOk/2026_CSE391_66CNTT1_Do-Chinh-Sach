@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.app {
+  width: 650px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  background-color: rgb(73, 68, 68);
+}
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  padding: 5px 10px;
+}
+.nav {
+  padding-top: 10px;
+  padding-left: 2px;
+}
+.nav a {
+  text-decoration: none;
+  color: #c0b3b3;
+  padding-left: 5px;
+}
+.search {
+  display: flex;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.search input {
+  margin: 5px 2px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.search button {
+  margin: 5px 2px;
+  border-radius: 5px;
+  background-color: rgb(73, 68, 68);
+  border: 1px solid #fff;
+  color: #f0f0f0;
+}
+.main {
+  background-color: #f3f2f2;
+  padding: 5px 15px;
+}
+.page-header {
+  display: flex;
+}
+.btn-add {
+  margin: 15px 5px 15px auto;
+  border-radius: 5px;
+  background-color: rgb(5, 104, 235);
+  color: #fff;
+  border: none;
+}
+
+tr {
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+td,
+th {
+  padding: 13px;
+  font-size: 12px;
+}
+
+.edit,
+.delete {
+  border: none;
+  border-radius: 5px;
+}
+
+.edit {
+  background-color: yellow;
+}
+.delete {
+  background-color: #ff0000;
+  color: #f0f0f0;
+}
