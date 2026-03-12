@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/validate.js"></script>
+    <style>
+      label.error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="myForm">
+        <label for="">Họ và tên:</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Điền họ tên"
+          id="name"
+        /><br />
+        <label for="">Email:</label>
+        <input type="text" name="email" placeholder="Điền email" /><br />
+        <label for="">SDT:</label>
+        <input type="tel" name="SDT" placeholder="Điền số điện thoại" /><br />
+        <label for="">Mật Khẩu:</label>
+        <input type="password" name="password" placeholder="Điền mật khẩu" />
+        <br />
+        <label for="">Xác nhận mật khẩu:</label>
+        <input
+          type="password"
+          name="re-password"
+          placeholder="Điền lại mật khẩu"
+        />
+        <br />
+        <label>Giới tính:</label>
+        <input type="radio" name="gender" value="Nam" /> <label>Nam</label>
+        <input type="radio" name="gender" value="Nữ" /> <label>Nữ</label>
+        <input type="radio" name="gender" value="XXX" /> <label>XXX</label>
+        <br />
+        <label for="">Điều khoản: Alo? Ờ anh chào Vũ nhá, em là Vũ à Vũ?</label>
+        <input type="checkbox" name="checkbox" value="yes" />Tôi đồng ý!
+        <br />
+        <button type="submit">Hoàn thành</button>
+      </form>
+    </div>
+    <div class="success">
+      <span></span>
+    </div>
+  </body>
+</html>

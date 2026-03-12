@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Đặt Hàng</title>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/order.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <h2>Đặt Hàng</h2>
+
+    <form id="orderForm">
+      <label>Tên sản phẩm</label>
+      <select name="product">
+        <option value="">-- Chọn sản phẩm --</option>
+        <option value="ao">Áo</option>
+        <option value="quan">Quần</option>
+        <option value="giay">Giày</option>
+      </select>
+      <br /><br />
+
+      <label>Số lượng</label>
+      <input type="number" name="quantity" min="1" max="99" />
+      <br /><br />
+
+      <label>Ngày giao hàng</label>
+      <input type="date" name="delivery" />
+      <br /><br />
+
+      <label>Địa chỉ giao</label>
+      <textarea name="address"></textarea>
+      <br /><br />
+
+      <label>Ghi chú</label>
+      <textarea name="note"></textarea>
+      <div id="noteCount">0/200</div>
+      <br /><br />
+
+      <label>Phương thức thanh toán</label>
+      <br />
+
+      <label>
+        <input type="radio" name="payment" value="cod" />
+        COD
+      </label>
+
+      <label>
+        <input type="radio" name="payment" value="bank" />
+        Chuyển khoản
+      </label>
+
+      <label>
+        <input type="radio" name="payment" value="ewallet" />
+        Ví điện tử
+      </label>
+
+      <br /><br />
+
+      <div>Tổng tiền: <span id="total">0</span> VNĐ</div>
+
+      <br />
+
+      <button type="submit">Đặt hàng</button>
+    </form>
+
+    <div id="overlay"></div>
+
+    <div id="confirmBox" style="display: none">
+      <h3>Xác nhận đặt hàng</h3>
+
+      <p id="orderSummary"></p>
+
+      <button id="confirmBtn">Xác nhận</button>
+
+      <button id="cancelBtn">Hủy</button>
+    </div>
+
+    <div id="successMsg"></div>
+  </body>
+</html>
