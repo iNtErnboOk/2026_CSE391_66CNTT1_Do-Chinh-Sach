@@ -78,9 +78,10 @@ $(document).ready(function () {
       },
     },
     submitHandler: function (form) {
-      let name = $("#name").val();
-      $(".success span").text("Đăng ký thành công! 🎉" + name);
-      $("#myForm").css("display", "none");
+      let name = document.getElementById("name").value;
+      document.querySelector(".success span").textContent =
+        "Đăng ký thành công! 🎉" + name;
+      document.getElementById("myForm").style.display = "none";
     },
   });
 });
